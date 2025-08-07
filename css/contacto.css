@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+/* header */
+:root{
+    --color1: #43aaff;
+    --hover-button: #3a99e7;
+    --white-hover: #e7e7e7;
+    --bg-colo-1: #beedff;
+    --bg-colo-2: #f1f1f1;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.menu-container{
+    background-color: #ffffff;
+    border-bottom: 1px solid #00000055;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    font-size: 11pt;
+    width: 100%;
+
+}
+.logo{
+    width: 220px;
+}
+.search{
+    height: 40px;
+    width: 600px;
+    border-radius: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 12pt;
+    border: 1px solid #000000;
+    
+}
+.search:focus{
+    outline: none;
+    border-color: var(--hover-button);
+}
+.menu-container>ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 500px;
+    height: 50px;
+    align-items: center;
+}
+.menu-container a{
+    text-decoration: none;
+    font-size: 1em;
+    color: #000000;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+li a{
+    background-color: #ffffff;
+    width: 120px;
+    height: 40px; 
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.menu-container li a:hover{
+    background-color: var(--white-hover);
+}
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
+    background-color: var(--color1);
+    padding: 0 8px;
+    border-radius: 50px;
+}
+ 
+.login:hover{
+    background-color: var(--hover-button);
+}
+.login svg{
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+}
+
+/* apartado de contactos */
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.form-section {
+    flex: 1 1 400px;
+    max-width: 500px;
+}
+
+.form-section h2 {
+    color: #001755;
+    margin-bottom: 10px;
+}
+
+.form-section p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form textarea {
+    height: 100px;
+    resize: none;
+}
+
+form button {
+    background-color: var(--color1);
+    color: white;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+form button:hover {
+    background-color: var(--hover-button);
+}
+
+form button i {
+    margin-right: 8px;
+}
+
+.image-section {
+    flex: 1 1 300px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.image-section img {
+    width: 150%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.image-section h3 {
+    color: #000f3a;
+}
+
+
+/* Estilos para el footer de tarjetas */
+.payment-footer {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.payment-footer .cards img {
+  height: 40px;
+  margin: 0 10px;
+}
+/* Estilos para el footer de redes sociales */
+.social-footer{
+  background-color: #dddddd; /* color de fondo gris claro */
+  padding: 20px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-links a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-social a {
+  margin-left: 15px;
+}
+
+.footer-social img {
+  width: 25px;
+  height: 25px;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.footer-social img:hover {
+  filter: grayscale(0%);
+}
