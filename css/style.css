@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+}
+
+
+/* MENU DE NAVEGACION */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oleo+Script:wght@400;700&family=Righteous&family=Special+Gothic+Expanded+One&display=swap');
+
+
+/* COLORESS */
+:root{
+    --color1: #43aaff;
+    --hover-button: #3a99e7;
+    --white-hover: #e7e7e7;
+    --bg-colo-1: #beedff;
+    --bg-colo-2: #f1f1f1;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.menu-container{
+    background-color: #ffffff;
+    border-bottom: 1px solid #00000055;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    font-size: 11pt;
+    width: 100%;
+
+}
+.logo{
+    width: 220px;
+}
+.search{
+    height: 40px;
+    width: 600px;
+    border-radius: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 12pt;
+    border: 1px solid #000000;
+    
+}
+.search:focus{
+    outline: none;
+    border-color: var(--hover-button);
+}
+.menu-container>ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 500px;
+    height: 50px;
+    align-items: center;
+}
+.menu-container a{
+    text-decoration: none;
+    font-size: 1em;
+    color: #000000;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+li a{
+    background-color: #ffffff;
+    width: 120px;
+    height: 40px; 
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.menu-container li a:hover{
+    background-color: var(--white-hover);
+}
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
+    background-color: var(--color1);
+    padding: 0 8px;
+    border-radius: 50px;
+}
+ 
+.login:hover{
+    background-color: var(--hover-button);
+}
+.login svg{
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+}
+
+/* Aqui acaba del nav */
+
+/* Cuerpo */
+
+
+/* Banner */
+.banner-box{
+    width: 100%;
+}
+.banner-box img{
+    width: 100%;
+    display: block;
+
+}
+
+
+/* Seccion 'Quienes Somos' */
+main{
+    font-size: 12pt;
+
+}
+section{
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px;
+    
+}
+.quienes-somos{
+    background-color: var(--bg-colo-1);
+}
+
+.text{
+    width: 700px;
+    height: 400px;
+}
+.title{
+    font-family: "Bebas Neue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 4.6em;
+    margin-bottom: 20px;
+}
+.parrafo{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    margin: 5px;
+    font-size: 1em;
+}
+.quienes-somos .img-box{
+    display: flex;
+    justify-content: space-around;
+    width: 665px;
+}
+.quienes-somos img{
+    width: 300px;
+}
+.shadow{
+    box-shadow: 0 5px 15px #00000055;
+}
+
+img.img1{
+  border-top-left-radius: 100px;
+}
+img.img2{
+   border-bottom-right-radius: 100px;
+}
+
+
+.porque-elegirnos{
+    background-color: var(--bg-colo-2);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+ 
+}
+.targets-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+
+}
+.target-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 270px;
+    height: 200px;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 30px;
+}
+.subtitle{
+    font-family: "Bebas Neue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.viaje-text{
+    font-size: 1.2em;
+    text-align: center;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: left;
+}
+.yellow-car{
+    width: 600px;
+}

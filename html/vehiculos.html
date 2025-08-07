@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/vehiculos.css" />
+</head>
+
+<body>
+    <header>
+    <header>
+        <!-- MENU DE NAVEGACION -->
+        <nav class="menu-container">
+            <a href="./index.html"><img class="logo" src="../img/logo-car-express.png" alt=""></a>
+            <input class="search" type="search" placeholder="Buscar un modelo...">
+            <ul>
+                <li class="li-vehiculos"><a class="" href="./vehiculos.html">Vehiculos</a></li>
+                <li class="li-reservas"><a class="" href="./reservas.html">Reservas</a></li>
+                <li class="li-contacto"><a class="" href="./contacto.html">Contacto</a></li>
+            </ul>
+            <a class="login" href="./login.html">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32" xml:space="preserve"><path d="M16 14c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zm0-12c-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5zM23.942 32H8.058A4.062 4.062 0 0 1 4 27.942c0-6.616 5.383-12 12-12s12 5.384 12 12A4.062 4.062 0 0 1 23.942 32zM16 17.942c-5.514 0-10 4.486-10 10A2.06 2.06 0 0 0 8.058 30h15.884A2.06 2.06 0 0 0 26 27.942c0-5.514-4.486-10-10-10z"/></svg>
+                Iniciar Sesion
+            </a>
+        </nav>
+    </header> <!-- AQUEI ACABA EL NAV -->
+
+    <section class="filtros">
+        <input type="text" id="filtroMarca" placeholder="Filtrar por marca..." />
+        <input type="text" id="filtroModelo" placeholder="Filtrar por modelo..." />
+        <input type="number" id="precioMin" placeholder="Precio mínimo..." />
+        <input type="number" id="precioMax" placeholder="Precio máximo..." />
+        <button onclick="filtrarVehiculos()">Filtrar</button>
+    </section>
+
+    <main id="vehiculosContainer">
+        <div class="card">
+            <img src="../img/vehiculo2.png" alt="Nissan Versa" />
+            <h3>Nissan Versa</h3>
+            <p>Transmisión: Automática</p>
+            <p class="anio">Año: 2025</p>
+            <p class="precio">S/ 112.00 por día</p>
+            <button>RESERVAR AUTO</button>
+        </div>
+
+        <div class="card">
+            <div class="etiqueta">Más rentado</div>
+            <img src="../img/corolla10.png" alt="Toyota Corolla" />
+            <h3>Toyota Corolla</h3>
+            <p>Transmisión: Mecánica</p>
+            <p class="anio">Año: 2025</p>
+            <p class="precio">S/ 150.00 por día</p>
+            <button>RESERVAR AUTO</button>
+        </div>
+
+        <div class="card">
+            <img src="../img/jetta2.png" alt="Volkswagen Jetta" />
+            <h3>Volkswagen Jetta</h3>
+            <p>Transmisión: Automática</p>
+            <p class="anio">Año: 2025</p>
+            <p class="precio">S/ 135.00 por día</p>
+            <button>RESERVAR AUTO</button>
+        </div>
+
+        <div class="card">
+            <img src="../img/corollacross1.jpg" alt="Toyota CorollaCross" />
+            <h3>Toyota Corolla Cross</h3>
+            <p>Transmisión: Automática</p>
+            <p class="anio">Año: 2025</p>
+            <p class="precio">S/ 170.00 por día</p>
+            <button>RESERVAR AUTO</button>
+        </div>
+
+        <div class="card">
+            <img src="../img/nissan-qashqai-2024.png" alt="Nissan Qashqai" />
+            <h3>Nissan Qashqai</h3>
+            <p>Transmisión: Automática</p>
+            <p class="anio">Año: 2025</p>
+            <p class="precio">S/ 165.00 por día</p>
+            <button>RESERVAR AUTO</button>
+        </div>
+
+        <div class="card">
+            <img src="../img/hyundai_creta.png" alt="Hyundai Creta" />
+            <h3>Hyundai Creta</h3>
+            <p>Transmisión: Automática</p>
+            <p class="anio">Año: 2025</p>
+            <p class="precio">S/ 155.00 por día</p>
+            <button>RESERVAR AUTO</button>
+        </div>
+
+        <div class="card">
+            <img src="../img/Nissan-frontier-2024.png" alt="Nissan Frontier" />
+            <h3>Nissan Frontier</h3>
+            <p>Transmisión: Automática</p>
+            <p class="anio">Año: 2025</p>
+            <p class="precio">S/ 185.00 por día</p>
+            <button>RESERVAR AUTO</button>
+        </div>
+
+        <div class="card">
+            <img src="../img/toyota_hilux_2025.png" alt="Toyota Hilux" />
+            <h3>Toyota Hilux</h3>
+            <p>Transmisión: Automática</p>
+            <p class="anio">Año: 2025</p>
+            <p class="precio">S/ 195.00 por día</p>
+            <button>RESERVAR AUTO</button>
+        </div>
+
+        <div class="card">
+            <img src="../img/mitsubishi_2025.png" alt="Mitsubishi L200" />
+            <h3>Mitsubishi L200</h3>
+            <p>Transmisión: Automática</p>
+            <p class="anio">Año: 2025</p>
+            <p class="precio">S/ 190.00 por día</p>
+            <button>RESERVAR AUTO</button>
+        </div>
+
+    </main>
+
+    <footer>
+  
+    </footer>
+</body>
+<a href="https://wa.me/51987654321223" class="whatsapp-float" target="_blank" aria-label="Chat en WhatsApp">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+</a>
+
+</html>
